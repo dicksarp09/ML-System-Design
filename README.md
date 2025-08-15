@@ -101,6 +101,7 @@ Imported Prometheus as a data source
 Dashboards: CPU, memory, and API request metrics
 
 **Key Takeaways**
+
 Built an end-to-end ML pipeline from scratch
 
 Supported batch predictions, a common real-world requirement
