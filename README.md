@@ -6,15 +6,12 @@ Here’s a walkthrough of what I built:
 
 **Phase 1 – Data Collection**
 
-Goal: Gather raw data for ML model training.
+End goal (business perspective):
 
-Tools Used:
-
-1. Python for data handling
-
-2. Structured data ingestion techniques
-
-Outcome: Raw dataset ready for preprocessing.
+1. Automate student performance prediction using machine learning.
+2. Reduce manual effort for educators while providing actionable insights.
+3.Collect student data with a binary target variable (pass/fail) and understand feature importance.
+4. Understand requirements for an API and batch prediction workflow.
 
 **Phase 2 – Data Ingestion with MongoDB**
 
