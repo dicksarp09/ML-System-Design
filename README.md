@@ -1,6 +1,6 @@
-**From Data to Insights: Building an End-to-End ML System design Pipeline**
+**StudentPass: Predicting Student Performance (Pass/Fail)**
 
-Over the past few weeks, I built a complete ML engineering pipeline that brings a machine learning model from raw data to a production-ready, monitored API. The project covers everything a modern ML engineer needs to showcase: data collection, model training, deployment, monitoring, and visualization.
+StudentPass is an ML-based web application that predicts whether a student will pass or fail based on academic and demographic data. It helps educators and institutions quickly identify at-risk students and take timely interventions. StudentPass reduces manual effort, speeds up performance evaluation, and provides actionable insights using predictive machine learning models.
 
 Here’s a walkthrough of what I built:
 
