@@ -1,4 +1,4 @@
-**From Data to Insights: Building an End-to-End ML Pipeline**
+***From Data to Insights: Building an End-to-End ML Pipeline***
 
 Over the past few weeks, I built a complete ML engineering pipeline that brings a machine learning model from raw data to a production-ready, monitored API. The project covers everything a modern ML engineer needs to showcase: data collection, model training, deployment, monitoring, and visualization.
 
