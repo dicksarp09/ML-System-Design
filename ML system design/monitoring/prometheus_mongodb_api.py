@@ -43,6 +43,31 @@ def home():
         "mongo_status": status
     })
 
+def batch_predict(input_csv, output_csv):
+    """
+    Runs batch predictions on a CSV file and saves the results.
+
+    Parameters:
+    input_csv (str): Path to input CSV file containing features
+    output_csv (str): Path where the predictions will be saved
+    """
+    # Load data
+    data = pd.read_csv(input_csv)
+
+    # Preprocess data if needed
+    # Example: data = preprocess(data)
+
+    # Run predictions
+    predictions = model.predict(data)
+
+    # Save results
+    output_df = data.copy()
+    output_df['prediction'] = predictions
+    output_df.to_csv(output_csv, index=False)
+
+    print(f"Batch predictions saved to {output_csv}")
+
+
 # Example endpoint
 @app.route("/hello")
 def hello():
