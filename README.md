@@ -1,4 +1,4 @@
-***From Data to Insights: Building an End-to-End ML Pipeline***
+**From Data to Insights: Building an End-to-End ML System design Pipeline**
 
 Over the past few weeks, I built a complete ML engineering pipeline that brings a machine learning model from raw data to a production-ready, monitored API. The project covers everything a modern ML engineer needs to showcase: data collection, model training, deployment, monitoring, and visualization.
 
@@ -100,6 +100,7 @@ Imported Prometheus as a data source
 
 Dashboards: CPU, memory, and API request metrics
 
+**Key Takeaways**
 Built an end-to-end ML pipeline from scratch
 
 Supported batch predictions, a common real-world requirement
@@ -109,3 +110,19 @@ Containerized services for consistent deployment
 Implemented monitoring and visualization for production readiness
 
 Learned how modern ML engineering combines coding, DevOps, and system observability
+
+**Tech Stack**
+
+| Tool/Library  | Purpose                         |
+| ------------- | ------------------------------- |
+| Python        | Data processing, model training |
+| pandas, numpy | Data wrangling                  |
+| scikit-learn  | ML model training               |
+| MongoDB       | Data storage                    |
+| PyMongo       | Python–MongoDB connection       |
+| Flask         | Serve model as API              |
+| Docker        | Containerization                |
+| Prometheus    | Metrics collection              |
+| node-exporter | Host system metrics             |
+| cAdvisor      | Container-level metrics         |
+| Grafana       | Visualization dashboards        |
