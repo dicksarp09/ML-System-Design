@@ -1,0 +1,24 @@
+# Web framework
+Flask
+flask-cors
+flask-restful
+
+# Database
+pymongo
+dnspython
+
+# ML / Data
+numpy
+pandas
+scikit-learn
+joblib
+
+# Monitoring & Metrics
+prometheus-flask-exporter
+
+# Async / API calls (if needed)
+httpx
+asyncio
+
+# Model Serving
+gunicorn

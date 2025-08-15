@@ -1,0 +1,67 @@
+{
+  "id": null,
+  "title": "Flask Monitoring Dashboard",
+  "tags": ["flask", "prometheus", "docker"],
+  "timezone": "browser",
+  "schemaVersion": 36,
+  "version": 1,
+  "refresh": "5s",
+  "panels": [
+    {
+      "type": "stat",
+      "title": "Total HTTP Requests",
+      "gridPos": { "x": 0, "y": 0, "w": 6, "h": 4 },
+      "targets": [
+        {
+          "expr": "sum(flask_http_request_total)",
+          "legendFormat": "Requests"
+        }
+      ]
+    },
+    {
+      "type": "graph",
+      "title": "HTTP Requests Over Time",
+      "gridPos": { "x": 6, "y": 0, "w": 18, "h": 8 },
+      "targets": [
+        {
+          "expr": "sum(rate(flask_http_request_total[1m]))",
+          "legendFormat": "req/s"
+        }
+      ]
+    },
+    {
+      "type": "stat",
+      "title": "Error Rate",
+      "gridPos": { "x": 0, "y": 4, "w": 6, "h": 4 },
+      "targets": [
+        {
+          "expr": "sum(rate(flask_http_request_total{status!~\"2..\"}[1m])) / sum(rate(flask_http_request_total[1m])) * 100",
+          "legendFormat": "Error %"
+        }
+      ],
+      "options": { "reduceOptions": { "calcs": ["last"] }, "colorMode": "value" }
+    },
+    {
+      "type": "graph",
+      "title": "CPU Usage (%)",
+      "gridPos": { "x": 0, "y": 8, "w": 12, "h": 8 },
+      "targets": [
+        {
+          "expr": "rate(container_cpu_usage_seconds_total{container=\"flask_app\"}[1m]) * 100",
+          "legendFormat": "CPU %"
+        }
+      ]
+    },
+    {
+      "type": "graph",
+      "title": "Memory Usage (MB)",
+      "gridPos": { "x": 12, "y": 8, "w": 12, "h": 8 },
+      "targets": [
+        {
+          "expr": "container_memory_usage_bytes{container=\"flask_app\"} / 1024 / 1024",
+          "legendFormat": "Memory MB"
+        }
+      ]
+    }
+  ]
+}

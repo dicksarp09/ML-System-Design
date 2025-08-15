@@ -1,0 +1,18 @@
+[
+  {
+    "school": "GP",
+    "sex": "F",
+    "age": 17,
+    "address": "U",
+    "Medu": 4,
+    "Fedu": 3
+  },
+  {
+    "school": "MS",
+    "sex": "M",
+    "age": 16,
+    "address": "R",
+    "Medu": 3,
+    "Fedu": 3
+  }
+]

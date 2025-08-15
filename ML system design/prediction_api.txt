@@ -1,0 +1,40 @@
+Invoke-RestMethod -Uri http://127.0.0.1:5000/predict `
+-Method POST `
+-Headers @{ "Content-Type"="application/json" } `
+-Body '{
+  "school": "GP",
+  "sex": "F",
+  "age": 17,
+  "address": "U",
+  "Medu": 4,
+  "Fedu": 3,
+  "higher": "yes",
+  "romantic": "no",
+  "dataset": "student-mat",
+  "Fjob": "teacher",
+  "activities": "yes",
+  "Walc": 1,
+  "health": 5,
+  "Mjob": "other",
+  "freetime": 3,
+  "failures": 0,
+  "goout": 2,
+  "schoolsup": "no",
+  "G2": 15,
+  "nursery": "yes",
+  "Pstatus": "T",
+  "traveltime": 1,
+  "studytime": 2,
+  "G3": 16,
+  "famsize": "GT3",
+  "paid": "no",
+  "guardian": "mother",
+  "Dalc": 1,
+  "internet": "yes",
+  "famsup": "no",
+  "absences": 4,
+  "G1": 14,
+  "reason": "home",
+  "famrel": 4
+}'
+
