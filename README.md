@@ -1,0 +1,111 @@
+**From Data to Insights: Building an End-to-End ML Pipeline**
+
+Over the past few weeks, I built a complete ML engineering pipeline that brings a machine learning model from raw data to a production-ready, monitored API. The project covers everything a modern ML engineer needs to showcase: data collection, model training, deployment, monitoring, and visualization.
+
+Here’s a walkthrough of what I built:
+
+**Phase 1 – Data Collection**
+
+Goal: Gather raw data for ML model training.
+
+Tools Used:
+
+1. Python for data handling
+
+2. Structured data ingestion techniques
+
+Outcome: Raw dataset ready for preprocessing.
+
+**Phase 2 – Data Ingestion with MongoDB**
+
+Goal: Store and manage collected data in a NoSQL database.
+
+Tools Used:
+
+1. MongoDB for data persistence
+
+2. PyMongo for Python–MongoDB interaction
+
+Key Steps:
+
+Create database and collection in MongoDB
+
+Insert raw or cleaned data for later access
+
+**Phase 3 – Model Development**
+
+Goal: Train and evaluate a machine learning model.
+
+Tools Used:
+
+1. scikit-learn for ML
+
+2. pandas and numpy for preprocessing
+
+Outcome: A trained logistic regression model stored as logreg.pkl.
+
+**Phase 4 – Flask API**
+
+Goal: Serve the ML model through a REST API.
+
+Tools Used:
+
+1. Flask for API endpoints
+
+2. Flask-PyMongo to fetch input data from MongoDB
+
+Features:
+
+Single predictions via JSON input
+
+Batch predictions via CSV input/output
+
+**Phase 5 – Dockerization**
+
+Goal: Containerize the application for consistent deployment.
+
+Tools Used:
+
+1. Docker for containerization
+
+2. docker-compose to run multiple services
+
+Key Files:
+
+Dockerfile
+
+docker-compose.yml
+
+**Phase 6 – Monitoring with Prometheus**
+
+Goal: Collect application and system metrics.
+
+Tools Used:
+
+Prometheus for metrics scraping and storage
+
+node-exporter for host CPU/memory metrics
+
+cAdvisor for container-level metrics
+
+**Phase 7 – Visualization with Grafana**
+
+Goal: Visualize metrics and build dashboards.
+
+Tools Used:
+
+Grafana for visualization
+
+Imported Prometheus as a data source
+
+Dashboards: CPU, memory, and API request metrics
+
+Built an end-to-end ML pipeline from scratch
+
+Supported batch predictions, a common real-world requirement
+
+Containerized services for consistent deployment
+
+Implemented monitoring and visualization for production readiness
+
+Learned how modern ML engineering combines coding, DevOps, and system observability
