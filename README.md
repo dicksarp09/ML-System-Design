@@ -1,6 +1,6 @@
 
 
-StudentPass<img width="1536" height="1024" alt="StudentPass Logo Design" src="https://github.com/user-attachments/assets/dfce31cb-566d-4133-97ff-93e631479f93"  AI driven Student Performance Management
+StudentPass <img width="1536" height="1024" alt="StudentPass Logo Design" src="https://github.com/user-attachments/assets/dfce31cb-566d-4133-97ff-93e631479f93">  AI driven Student Performance Management
 
 
 
