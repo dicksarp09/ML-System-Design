@@ -1,3 +1,9 @@
+
+
+Supported batch predictions, a common real-world requirement<img width="1536" height="1024" alt="StudentPass Logo Design" src="https://github.com/user-attachments/assets/dfce31cb-566d-4133-97ff-93e631479f93" />
+
+
+
 **StudentPass: Predicting Student Performance (Pass/Fail)**
 
 StudentPass is an ML-based web application that predicts whether a student will pass or fail based on academic and demographic data. It helps educators and institutions quickly identify at-risk students and take timely interventions. StudentPass reduces manual effort, speeds up performance evaluation, and provides actionable insights using predictive machine learning models.
@@ -100,9 +106,6 @@ Dashboards: CPU, memory, and API request metrics
 **Key Takeaways**
 
 Built an end-to-end ML pipeline from scratch
-
-Supported batch predictions, a common real-world requirement<img width="1536" height="1024" alt="StudentPass Logo Design" src="https://github.com/user-attachments/assets/dfce31cb-566d-4133-97ff-93e631479f93" />
-
 
 Containerized services for consistent deployment
 
