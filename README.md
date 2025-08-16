@@ -101,7 +101,8 @@ Dashboards: CPU, memory, and API request metrics
 
 Built an end-to-end ML pipeline from scratch
 
-Supported batch predictions, a common real-world requirement
+Supported batch predictions, a common real-world requirement<img width="1536" height="1024" alt="StudentPass Logo Design" src="https://github.com/user-attachments/assets/dfce31cb-566d-4133-97ff-93e631479f93" />
+
 
 Containerized services for consistent deployment
 
